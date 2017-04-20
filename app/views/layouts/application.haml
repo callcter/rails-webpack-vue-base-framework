@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Todos
+    = csrf_meta_tags
+    = webpack_stylesheet_link_tag 'application'
+
+  %body
+
+    = yield
+
+    = webpack_javascript_include_tag 'application'
